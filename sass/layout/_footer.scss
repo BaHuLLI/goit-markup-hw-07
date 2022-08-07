@@ -1,0 +1,134 @@
+
+.footer {
+  background-color: var(--bg-dark-clr);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+&__info {
+  @extend %container;
+  display: flex;
+
+  align-items: baseline;
+}
+
+&__logo {
+  @extend  %reset-link;
+  display: inline-block;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  transition: color 250ms var(--cubic);
+}
+
+&__logo:focus {
+  color: var(--accent-color);
+}
+
+&__logo-text {
+  color: var(--accent-color);
+}
+
+&__nav {
+  padding-top: 20px;
+}
+
+&__list {
+  @extend  %reset-list;
+  padding-top: 9px;
+}
+
+&__adress {
+  @extend  %reset-link;
+  transition: color 250ms var(--cubic);
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  -webkit-transition: color 250ms var(--cubic);
+  -moz-transition: color 250ms var(--cubic);
+  -ms-transition: color 250ms var(--cubic);
+  -o-transition: color 250ms var(--cubic);
+}
+
+&__adress:hover,
+&__adress:focus {
+  color: var(--accent-color);
+}
+
+&__feedback {
+  @extend  %reset-link;
+  font-style: normal;
+  transition: color 250ms var(--cubic);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms var(--cubic);
+  -moz-transition: color 250ms var(--cubic);
+  -ms-transition: color 250ms var(--cubic);
+  -o-transition: color 250ms var(--cubic);
+}
+
+&__feedback:hover,
+&__feedback:focus {
+  color: var(--accent-color);
+}
+
+&__social {
+  margin-left: 70px;
+  margin-right: 93px;
+}
+
+&__social-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+&__social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+&__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+&__social-link {
+  @extend  %reset-link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--cubic);
+  
+}
+
+&__social-items
+{
+  @extend %reset-list;
+} 
+
+&__social-link:hover,
+&__social-link:focus {
+  background-color: var(--accent-color);
+}
+
+}
+

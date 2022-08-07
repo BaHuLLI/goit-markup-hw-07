@@ -1,13 +1,19 @@
-/**************************
-          Portfolio
-    **************************/
 /* Filter */
-.filter__list {
+.filter
+{
+@extend %section;
+
+&__group{
+  @extend %container;
+}  
+
+&__list {
   display: flex;
   justify-content: center;
 }
 
-.filter__items {
+&__items {
+  @extend %reset-list;
   padding-left: 8px;
   font-weight: 500;
   font-size: 16px;
@@ -15,10 +21,12 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-.filter-items:first-child {
+
+&-items:first-child {
   padding-left: 0px;
 }
-.filter__button {
+
+&__button {
   transition: color, background-color 250ms var(--cubic);
   padding-top: 6px;
   padding-bottom: 6px;
@@ -40,8 +48,9 @@
   -ms-transition: color, background-color 250ms var(--cubic);
   -o-transition: color, background-color 250ms var(--cubic);
 }
-.filter__button:hover,
-.filter__button:focus {
+
+&__button:hover,
+&__button:focus {
   background-color: var(--accent-color);
   border-color: transparent;
   color: #ffffff;
@@ -50,11 +59,12 @@
   border-radius: 4px;
 }
 
-.filtr-container {
+&__container {
   overflow: hidden;
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
 }
